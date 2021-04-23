@@ -1,4 +1,8 @@
-let names = ['João', 'Maria', 'Antônio', 'Margarida'];
-for( let nome of names) {
-    console.log (nome);
-}
+let a = 5;
+let b = 6;
+
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a % b);
