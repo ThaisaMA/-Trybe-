@@ -1,8 +1,10 @@
-let a = 5;
-let b = 6;
+let x = 0;
 
-console.log(a + b);
-console.log(a - b);
-console.log(a * b);
-console.log(a / b);
-console.log(a % b);
+if(x > 0) {
+    console.log('positive');
+} else if (x == 0) {
+    console.log('zero');
+} else {
+    console.log('negative');
+}
+
