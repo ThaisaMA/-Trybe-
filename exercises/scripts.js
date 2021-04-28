@@ -27,7 +27,7 @@ let terceiro = 87;
 if(primeiro > segundo && primeiro > terceiro) {
     console.log(primeiro);
 };
-    else if(segundo > primeiro && segundo > terceiro) {
+else if(segundo > primeiro && segundo > terceiro) {
     console.log(segundo);
 };
 else {
