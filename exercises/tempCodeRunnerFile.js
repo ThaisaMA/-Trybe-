@@ -1,4 +1,4 @@
-let nota = 60;
+let nota = -10;
 if (nota >= 90 && nota <= 100) {
     console.log('A');
 }
@@ -14,7 +14,10 @@ else if (nota >= 60 && nota < 70) {
 else if (nota >= 50 && nota < 60) {
     console.log('E');
 }
-else {
+else if (nota >= 0 && nota < 50) {
     console.log('F');
+}
+else {
+    console.log('erro')
 }
 
