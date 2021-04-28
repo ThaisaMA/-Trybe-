@@ -1,9 +1,10 @@
-let num1 = 660;
-let num2 = 658;
-let num3 = 576;
+let custo = 2;
+let venda = 0;
+let custoTotal = ((custo * 0.2) + custo);
+let lucro = (venda - custoTotal);
 
-if (num1 % 2 != 0 || num2 % 2 != 0 || num3 % 2 != 0) {
-    console.log('true');
+if (custo > 0 && venda > 0) {
+    console.log(lucro * 100);
 } else {
-    console.log('false');
+    console.log('erro')
 }
