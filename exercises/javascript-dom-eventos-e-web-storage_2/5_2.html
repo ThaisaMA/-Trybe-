@@ -75,12 +75,16 @@
 
      let left = document.createElement('div');
      left.className = 'left-content';
-     main .appendChild(left);
+     main.appendChild(left);
 
      let right = document.createElement('div');
      right.className = 'right-content';
      main.appendChild(right);
      
+     let img = document.createElement('img');
+     img.src = 'https://picsum.photos/200 ';
+     img.className = 'small-image';
+     left.appendChild(img);   
 
     </script>
   </body>
