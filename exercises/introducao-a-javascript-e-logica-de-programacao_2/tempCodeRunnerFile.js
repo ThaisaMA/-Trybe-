@@ -1,10 +1,14 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let impar = [];
-for(i = 0; i < numbers.length; i += 0) {
-    if(numbers[i] % 2 != 0) {
-        impar.push(numbers[i]);
-    } else {
-        impar = 'nenhum valor ímpar encontrado'; 
-    }
+let valor = [];
+for (i = 0; i < 25; i += 1) {
+    valor[i] = i + 1;
 }
-console.log(impar)
+console.log(valor);
+
+
+
+
+let array = [];
+for (i = 0; i < 25; i += 1) {
+    array[i] = valor[i] / 2;
+}
+console.log(array);
