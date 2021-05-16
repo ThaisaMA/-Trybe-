@@ -88,11 +88,19 @@
 
      let lista = document.createElement('ul');
      right.appendChild(lista);
-     let itens = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
-     document.createElement('li');
-     item.innerHTML = 'um';
-     lista.appendChild(item);
+     const itens = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+     for (let index = 0; index < itens.length; index += 1) {
+       const num = document.createElement('li');
+       num.innerHTML = itens[index];
+       lista.appendChild(num);
      }
+     
+     for (let i = 0; i < 3; i += 1) {
+       const titles = document.createElement('h3');
+       titles.innerHTML = 'Show ' + i; 
+       main.appendChild(titles);
+     }
+     
     </script>
   </body>
 </html>
