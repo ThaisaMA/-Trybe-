@@ -53,6 +53,7 @@
       .main-content .description {
         text-align: center;
       }
+    
     </style>
   </head>
   <body>
@@ -107,6 +108,9 @@
      const leftContent = document.getElementsByClassName('left-content')[0];
      main.removeChild(leftContent);
 
+     const rightContent = document.getElementsByClassName('right-content')[0];
+     rightContent.style.marginRight = 'auto';
+     
      </script>
   </body>
   </html>
