@@ -57,55 +57,56 @@
   </head>
   <body>
     <script>
-     let titulo = document.createElement('h1');
-     titulo.className = 'title';
-     titulo.innerHTML = 'Exercício 5.2 - JavaScript DOM';
-     document.body.appendChild(titulo);
-
-
-     let main = document.createElement('div');
-     main.className = 'main-content';
-     document.body.appendChild(main);
-
-     let center = document.createElement('div');
-     center.className = 'center-content';
-     main.appendChild(center);
-
-     let para = document.createElement('p');
-     para.innerText = 'Era uma vez uma pessoa tentando.';
-     center.appendChild(para);
-
-     let left = document.createElement('div');
-     left.className = 'left-content';
-     main.appendChild(left);
-
-     let right = document.createElement('div');
-     right.className = 'right-content';
-     main.appendChild(right);
-     
-     let img = document.createElement('img');
-     img.src = 'https://picsum.photos/200 ';
-     img.className = 'small-image';
-     left.appendChild(img);   
-
-     let lista = document.createElement('ul');
-     right.appendChild(lista);
-     const itens = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
-     for (let index = 0; index < itens.length; index += 1) {
-       const num = document.createElement('li');
-       num.innerHTML = itens[index];
-       lista.appendChild(num);
+      const titulo = document.createElement('h1');
+      titulo.className = 'title';
+      titulo.innerHTML = 'Exercício 5.2 - JavaScript DOM';
+      document.body.appendChild(titulo);
+      
+      
+      const main = document.createElement('div');
+      main.className = 'main-content';
+      document.body.appendChild(main);
+      
+      const center = document.createElement('div');
+      center.className = 'center-content';
+      main.appendChild(center);
+      
+      const para = document.createElement('p');
+      para.innerText = 'Era uma vez uma pessoa tentando.';
+      center.appendChild(para);
+      
+      const left = document.createElement('div');
+      left.className = 'left-content';
+      main.appendChild(left);
+      
+      const right = document.createElement('div');
+      right.className = 'right-content';
+      main.appendChild(right);
+      
+      let img = document.createElement('img');
+      img.src = 'https://picsum.photos/200 ';
+      img.className = 'small-image';
+      left.appendChild(img);   
+      
+      let lista = document.createElement('ul');
+      right.appendChild(lista);
+      const itens = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+      for (let index = 0; index < itens.length; index += 1) {
+        const num = document.createElement('li');
+        num.innerHTML = itens[index];
+        lista.appendChild(num);
+      }
+      
+      for (let i = 0; i < 3; i += 1) {
+        const titles = document.createElement('h3');
+        titles.className = 'description';
+        titles.innerHTML = 'Show ' + i; 
+        main.appendChild(titles);
      }
-     
-     for (let i = 0; i < 3; i += 1) {
-       const titles = document.createElement('h3');
-       titles.className = 'description';
-       titles.innerHTML = 'Show ' + i; 
-       main.appendChild(titles);
-     }
-     
-    
 
-    </script>
+     const leftContent = document.getElementsByClassName('left-content')[0];
+     main.removeChild(leftContent);
+
+     </script>
   </body>
-</html>
+  </html>
